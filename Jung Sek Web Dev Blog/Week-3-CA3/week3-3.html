@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CA Flex</title>
+    <style>
+      ul {
+        list-style: none;
+      }
+
+      .flex-container {
+        align-content: center;
+        display: flex;
+        background-color: rgb(230, 200, 255);
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content:center;
+      }
+
+    
+
+      .flex-item {
+        background-color: rgba(255, 134, 255, 0.664);
+        color: white;
+        flex-basis: 15%;
+        margin: 2%;
+        text-align: center;
+        line-height: 75px;
+        font-size: 2em;
+      }
+
+      @media (max-width: 576px) {
+        .flex-container{
+          flex-direction: row-reverse;
+          flex-flow: column wrap;
+          background-color: rgb(230, 200, 180);
+        }
+      }
+
+      @media (max-width: 992px) {
+        .flex-container{
+          flex-direction: row-reverse;
+          background-color: rgb(90, 200, 180);
+        }
+      }
+  
+      
+    
+    </style>
+  </head>
+  <body>
+    <ul class="flex-container">
+      <li class="flex-item">1</li>
+      <li class="flex-item">2</li>
+      <li class="flex-item">3</li>
+      <li class="flex-item">4</li>
+      <li class="flex-item">5</li>
+      <li class="flex-item">6</li>
+    </ul>
+  </body>
+</html>
+
+
